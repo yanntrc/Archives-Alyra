@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mon Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Document metadata -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+
+    <style>
+      .card-gradient {
+        width: 5rem;
+        height: 5rem;
+      }
+    </style>
+  </head>
+
+  <body class="full light">
+    <main>
+      <div id="root">
+        <div class="App min-vh-100 d-flex flex-column">
+          <header class="text-center bg-dark text-white py-5 mb-5" style="background-image: linear-gradient(to right, rgb(82, 82, 82), rgb(61, 114, 180))">
+            <h1 class="display-1">Alyra Gradients</h1>
+            <p class="tagline">Ultime collection de plus beaux dégradés</p>
+
+            <button aria-label="Clicker pour afficher le dégradé précédant" type="button" class="btn btn-outline-light m-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"></path>
+              </svg>
+            </button>
+            <button aria-label="Clicker pour changer le dégradé" type="button" class="btn btn-outline-light m-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"></path>
+                <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"></path>
+              </svg></button
+            ><button aria-label="Clicker pour afficher le dégradé suivant" type="button" class="btn btn-outline-light m-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path></svg>
+            </button>
+          </header>
+          <main class="container">
+            <h1 class="text-center my-4">Alyra Gradients</h1>
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="select">Filtrer par tag</label
+              ><select class="form-select" id="select">
+                <option value="all">Tous</option>
+                <option value="gris">gris</option>
+                <option value="vert">vert</option>
+                <option value="bleu">bleu</option>
+                <option value="violet">violet</option>
+                <option value="rose">rose</option>
+                <option value="jaune">jaune</option>
+                <option value="orange">orange</option>
+                <option value="fuchsia">fuchsia</option>
+                <option value="mauve">mauve</option>
+                <option value="rouge">rouge</option>
+              </select>
+            </div>
+            <ul class="row list-unstyled">
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(189, 195, 199), rgb(44, 62, 80))"></div>
+                  <h2 class="h5 text-center">Grade Grey</h2>
+                  <code>background-image: linear-gradient(to right, rgb(189, 195, 199), rgb(44, 62, 80));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">gris</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(31, 64, 55), rgb(153, 242, 200))"></div>
+                  <h2 class="h5 text-center">Harvey</h2>
+                  <code>background-image: linear-gradient(to right, rgb(31, 64, 55), rgb(153, 242, 200));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">vert</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(0, 242, 96), rgb(5, 117, 230))"></div>
+                  <h2 class="h5 text-center">Rainbow Blue</h2>
+                  <code>background-image: linear-gradient(to right, rgb(0, 242, 96), rgb(5, 117, 230));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-light" disabled="">fuchsia</button><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">vert</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(168, 192, 255), rgb(63, 43, 150))"></div>
+                  <h2 class="h5 text-center">Slight Ocean View</h2>
+                  <code>background-image: linear-gradient(to right, rgb(168, 192, 255), rgb(63, 43, 150));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">bleu</button><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">violet</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(21, 153, 87), rgb(21, 87, 153))"></div>
+                  <h2 class="h5 text-center">Crystal Clear</h2>
+                  <code>background-image: linear-gradient(to right, rgb(21, 153, 87), rgb(21, 87, 153));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">bleu</button><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">vert</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(238, 156, 167), rgb(255, 221, 225))"></div>
+                  <h2 class="h5 text-center">Piggy Pink</h2>
+                  <code>background-image: linear-gradient(to right, rgb(238, 156, 167), rgb(255, 221, 225));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">rose</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(253, 200, 48), rgb(243, 115, 53))"></div>
+                  <h2 class="h5 text-center">Citrus Peel</h2>
+                  <code>background-image: linear-gradient(to right, rgb(253, 200, 48), rgb(243, 115, 53));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">jaune</button><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">orange</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(238, 9, 121), rgb(255, 106, 0))"></div>
+                  <h2 class="h5 text-center">Ibiza Sunset</h2>
+                  <code>background-image: linear-gradient(to right, rgb(238, 9, 121), rgb(255, 106, 0));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">fuchsia</button><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">orange</button><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">rose</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(0, 195, 255), rgb(255, 255, 28))"></div>
+                  <h2 class="h5 text-center">Fun Fun</h2>
+                  <code>background-image: linear-gradient(to right, rgb(0, 195, 255), rgb(255, 255, 28));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">bleu</button><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">jaune</button><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">vert</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(255, 0, 204), rgb(51, 51, 153))"></div>
+                  <h2 class="h5 text-center">Cosmic Fusion</h2>
+                  <code>background-image: linear-gradient(to right, rgb(255, 0, 204), rgb(51, 51, 153));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">fuchsia</button><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">violet</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(255, 126, 95), rgb(254, 180, 123))"></div>
+                  <h2 class="h5 text-center">Sunrise</h2>
+                  <code>background-image: linear-gradient(to right, rgb(255, 126, 95), rgb(254, 180, 123));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">orange</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(252, 234, 187), rgb(248, 181, 0))"></div>
+                  <h2 class="h5 text-center">Sun on the Horizon</h2>
+                  <code>background-image: linear-gradient(to right, rgb(252, 234, 187), rgb(248, 181, 0));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">jaune</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(11, 72, 107), rgb(245, 98, 23))"></div>
+                  <h2 class="h5 text-center">Sunset</h2>
+                  <code>background-image: linear-gradient(to right, rgb(11, 72, 107), rgb(245, 98, 23));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">orange</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(251, 211, 233), rgb(187, 55, 125))"></div>
+                  <h2 class="h5 text-center">Cherryblossoms</h2>
+                  <code>background-image: linear-gradient(to right, rgb(251, 211, 233), rgb(187, 55, 125));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">rose</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(30, 60, 114), rgb(42, 82, 152))"></div>
+                  <h2 class="h5 text-center">Joomla</h2>
+                  <code>background-image: linear-gradient(to right, rgb(30, 60, 114), rgb(42, 82, 152));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">bleu</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(118, 184, 82), rgb(141, 194, 111))"></div>
+                  <h2 class="h5 text-center">Little Leaf</h2>
+                  <code>background-image: linear-gradient(to right, rgb(118, 184, 82), rgb(141, 194, 111));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">vert</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(82, 82, 82), rgb(61, 114, 180))"></div>
+                  <h2 class="h5 text-center">Curiosity blue</h2>
+                  <code>background-image: linear-gradient(to right, rgb(82, 82, 82), rgb(61, 114, 180));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">bleu</button><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">gris</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(100, 65, 165), rgb(42, 8, 69))"></div>
+                  <h2 class="h5 text-center">Twitch</h2>
+                  <code>background-image: linear-gradient(to right, rgb(100, 65, 165), rgb(42, 8, 69));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">violet</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(222, 97, 97), rgb(38, 87, 235))"></div>
+                  <h2 class="h5 text-center">Nepal</h2>
+                  <code>background-image: linear-gradient(to right, rgb(222, 97, 97), rgb(38, 87, 235));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">bleu</button><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">mauve</button><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">violet</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(255, 78, 80), rgb(249, 212, 35))"></div>
+                  <h2 class="h5 text-center">Dance To Forget</h2>
+                  <code>background-image: linear-gradient(to right, rgb(255, 78, 80), rgb(249, 212, 35));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">jaune</button><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">orange</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(218, 226, 248), rgb(214, 164, 164))"></div>
+                  <h2 class="h5 text-center">Moonrise</h2>
+                  <code>background-image: linear-gradient(to right, rgb(218, 226, 248), rgb(214, 164, 164));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">gris</button><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">rose</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(229, 45, 39), rgb(179, 18, 23))"></div>
+                  <h2 class="h5 text-center">YouTube</h2>
+                  <code>background-image: linear-gradient(to right, rgb(229, 45, 39), rgb(179, 18, 23));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">rouge</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(2, 170, 176), rgb(0, 205, 172))"></div>
+                  <h2 class="h5 text-center">Green Beach</h2>
+                  <code>background-image: linear-gradient(to right, rgb(2, 170, 176), rgb(0, 205, 172));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">bleu</button><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">vert</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(204, 43, 94), rgb(117, 58, 136))"></div>
+                  <h2 class="h5 text-center">Purple Love</h2>
+                  <code>background-image: linear-gradient(to right, rgb(204, 43, 94), rgb(117, 58, 136));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">mauve</button><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">rose</button></div>
+                </div>
+              </li>
+              <li class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card p-3 mb-4 shadow">
+                  <div class="card-gradient rounded-pill mx-auto mb-4" style="background-image: linear-gradient(to right, rgb(22, 160, 133), rgb(244, 208, 63))"></div>
+                  <h2 class="h5 text-center">Harmonic Energy</h2>
+                  <code>background-image: linear-gradient(to right, rgb(22, 160, 133), rgb(244, 208, 63));</code>
+                  <div class="mt-3"><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">jaune</button><button type="button" class="btn btn-sm me-2 mb-2 bg-dark text-white">vert</button></div>
+                </div>
+              </li>
+            </ul>
+          </main>
+          <footer class="bg-dark text-white text-center p-3 mt-auto">Made with Love for Alyra</footer>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
