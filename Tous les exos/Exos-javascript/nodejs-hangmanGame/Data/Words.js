@@ -1,0 +1,1 @@
+exports.wordsArray = ['bateau', 'avion','perruche']

@@ -1,0 +1,12 @@
+{
+  "name": "Hangman-Game",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/yanntrc/nodejs-hangmanGame.git",
+  "author": "yanntrc <yann.troadec.5@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "readline-sync": "^1.4.10"
+  }
+}

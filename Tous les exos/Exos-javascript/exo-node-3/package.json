@@ -1,0 +1,14 @@
+{
+  "name": "exo-node-3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/yanntrc/exo-node-3.git",
+  "author": "yanntrc <yann.troadec.5@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "jsdom": "^16.5.3",
+    "readline-sync": "^1.4.10"
+  }
+}

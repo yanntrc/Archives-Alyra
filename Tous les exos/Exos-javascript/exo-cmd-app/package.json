@@ -1,0 +1,13 @@
+{
+  "name": "exo-cmd-app",
+  "version": "1.0.0",
+  "description": "let's node",
+  "main": "index.js",
+  "repository": "https://github.com/yanntrc/exo-cmd-app.git",
+  "author": "yanntrc <yann.troadec.5@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "readline-sync": "^1.4.10"
+  }
+}
