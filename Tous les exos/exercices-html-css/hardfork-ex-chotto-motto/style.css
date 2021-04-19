@@ -1,0 +1,133 @@
+/*
+Vous commencez votre carrière en tant qu'intégrateur web. Votre premier client est un renommé chef japonnais Daichi Sakamoto.
+Son designer japonais a prépare pour vous une maquette minimaliste, aérée et très lisible 
+vous pouvez voir son prototype en action ici https://cdpn.io/alyra/debug/8492b4775f2abb53fcd260adf4173723
+La police utilisée ici - Changa - c'est une police google fonts à charger dans HTML settings > head stuff
+La référence de la couleur jaune - #fee500
+*/
+
+
+/* ref: https://s3-us-west-2.amazonaws.com/s.cdpn.io/1328554/chottomotto.png (images/chottomotto) */
+
+:root {
+    --yellow: #fee500;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ajouter une bordure jaune autour du body 24px  */
+
+
+/* changer la police pour Changa, laisser le sans-serif comme le 2e choix */
+
+
+/* augmente la taille de police au 20px, l'interligne de 1.8 */
+
+body {
+    border: 1.5rem solid var(--yellow);
+    font-family: 'Changa', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* le block contenu est centré ne dépasse pas la largeur de 720px */
+
+main {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* les images ne dépassent pas l'écran */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* centrer les éléments de la partie header */
+
+header img {
+    margin-top: 1rem;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+main img {
+    box-shadow: 0.625rem 0.625rem 0 var(--yellow);
+}
+
+
+/* titre h2 centré */
+
+h2 {
+    text-align: center;
+}
+
+
+/* les éléments dans le footer centrée */
+
+footer {
+    text-align: center;
+}
+
+
+/* taille de police plus grande (32px) dans le paragraphe intro, centré */
+
+.intro {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/* la liste sans bullets */
+
+
+/* pas de marge ni de padding */
+
+nav ul {
+    list-style: none;
+}
+
+
+/* les éléments de la liste affichés dans une ligne */
+
+nav li {
+    display: inline;
+}
+
+
+/* les liens dans la partie navigation en majuscules, couleur noir */
+
+
+/* espacés de 12px */
+
+nav a {
+    text-transform: uppercase;
+    background-color: var(--yellow);
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    transition: 0.5s;
+}
+
+
+/* le lien dans la partie navigation en survol devient jaune  */
+
+nav a:hover {
+    background-color: black;
+    color: white;
+}
